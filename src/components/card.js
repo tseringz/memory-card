@@ -1,6 +1,8 @@
 
-const Card = (props) => {
 
+
+const Card = (props) => {
+    
     return (
     <div>
         <span>{props.counter}</span>

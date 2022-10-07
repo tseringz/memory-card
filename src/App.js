@@ -123,21 +123,27 @@ function App() {
 
     function handleClick(index) {
         const newList = [...images]; 
-        newList.sort(() => Math.random() - 0.5);
-
         newList[index].isClick = !newList[index].isClick;
 
         if (!newList[index].isClick && counter < 14) {
             setCounter(counter + 1);
-            console.log(newList[index].isClick);
+            newList.sort(() => Math.random() - 0.5);
+            setImages(newList);
         } else {
             if(counter > bestScore) {
                 setBestScore(counter);
             }
             setCounter(0);
+            
+            const newGame = images.map(image => {
+                    return {
+                        ...image,
+                        isClick: true,
+                    }
+            });
+
+            setImages(newGame);
         }
-        newList.sort(() => Math.random() - 0.5);
-        setImages(newList);
         
     }
 
