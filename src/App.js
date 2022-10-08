@@ -166,6 +166,7 @@ function App() {
                 </ul>
             </div>
         </nav>
+        <section>
         <div style={{
         display: showScore,
         flexDirection: 'column',
@@ -179,7 +180,8 @@ function App() {
          <button type="button" onClick={() => setShowScore('none')}>Play again</button>
         </div>
     <Card images={images} counter={counter} bestScore={bestScore} handleClick={handleClick}/>
-  </div>
+        </section>
+    </div>
   );
 }
 
