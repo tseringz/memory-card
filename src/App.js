@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../src/styles/App.css';
+import logo from '../src/assets/logo.png';
 import Card from '../src/components/card';
 import '../src/styles/App.css';
 import naruto from '../src/assets/naruto.png';
@@ -153,8 +154,18 @@ function App() {
         }
         }, [bestScore]);
 
+
   return (
     <div className='App'>
+        <nav>
+            <div className="Brand"><img src={logo} alt="Naruto Logo" style={{width: '150px'}}/></div>
+            <div className="Menu">
+                <ul>
+                    <li>Score: {counter}</li>
+                    <li>Best Score: {bestScore}</li>
+                </ul>
+            </div>
+        </nav>
         <div style={{
         display: showScore,
         flexDirection: 'column',
@@ -163,7 +174,7 @@ function App() {
         position: 'absolute',
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.4)'}}>
+        backgroundImage: 'linear-gradient(to right, red , yellow)'}}>
          <h3>Your Best Score: {bestScore}</h3>
          <button type="button" onClick={() => setShowScore('none')}>Play again</button>
         </div>
