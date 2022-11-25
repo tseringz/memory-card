@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '../src/styles/App.css';
 import logo from '../src/assets/logo.png';
 import Card from '../src/components/card';
-import '../src/styles/App.css';
 import naruto from '../src/assets/naruto.png';
 import asuma from '../src/assets/asuma.png';
 import ino from '../src/assets/ino.png';
@@ -154,7 +153,7 @@ function App() {
         }
         }, [bestScore]);
 
-
+        
   return (
     <div className='App'>
         <nav>
@@ -166,21 +165,22 @@ function App() {
                 </ul>
             </div>
         </nav>
-        <section>
-        <div style={{
+        <Card images={images} counter={counter} bestScore={bestScore} handleClick={handleClick}/>
+    <section>
+    <div style={{
         display: showScore,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
+        top: 0,
         width: '100%',
         height: '100%',
         backgroundImage: 'linear-gradient(to right, red , yellow)'}}>
          <h3>Your Best Score: {bestScore}</h3>
          <button type="button" onClick={() => setShowScore('none')}>Play again</button>
-        </div>
-    <Card images={images} counter={counter} bestScore={bestScore} handleClick={handleClick}/>
-        </section>
+    </div>
+    </section>
     </div>
   );
 }
