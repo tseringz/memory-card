@@ -127,13 +127,13 @@ function App() {
 
         if (!newList[index].isClick && counter < 14) {
             setCounter(counter + 1);
-            newList.sort(() => Math.random() - 0.5);
-            setImages(newList);
+            const randomList = newList.slice().sort(() => Math.random() - 0.5);
+            setImages(randomList);
         } else {
             if(counter > bestScore) {
                 setBestScore(counter);
+                setCounter(0);
             }
-            setCounter(0);
             
             const newGame = images.map(image => {
                     return {
@@ -149,7 +149,8 @@ function App() {
 
     useEffect(() => {
         if (bestScore > 0) {
-            setShowScore('flex');
+            const showScreen = showScore === 'none' ? 'flex' : 'none';
+            setShowScore(showScreen);
         }
         }, [bestScore]);
 
