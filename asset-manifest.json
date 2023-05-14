@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.f8b39c02.css",
+    "main.js": "/memory-card/static/js/main.0ef4e1ea.js",
+    "static/media/HIROMISAKE.ttf": "/memory-card/static/media/HIROMISAKE.7ee24fcc5449833e4066.ttf",
+    "static/media/logo.png": "/memory-card/static/media/logo.887a17adbab278cde7dc.png",
+    "static/media/minato.png": "/memory-card/static/media/minato.7873f45f182c1f7b7efe.png",
+    "static/media/chouji.png": "/memory-card/static/media/chouji.42eb8634037249252c26.png",
+    "static/media/jiraiya.png": "/memory-card/static/media/jiraiya.d640a76134985e3208c8.png",
+    "static/media/naruto.png": "/memory-card/static/media/naruto.94be50340059cbcda78a.png",
+    "static/media/tobi.png": "/memory-card/static/media/tobi.1fd124f577637e020ada.png",
+    "static/media/shino.png": "/memory-card/static/media/shino.39228c131d36ba26e9cb.png",
+    "static/media/sakura.png": "/memory-card/static/media/sakura.7f1d6ab610a07cedfa6c.png",
+    "static/media/kiba.png": "/memory-card/static/media/kiba.4103be91aa482d62f9fb.png",
+    "static/media/gaara.png": "/memory-card/static/media/gaara.a63182c67bd646e9259f.png",
+    "static/media/asuma.png": "/memory-card/static/media/asuma.ec0e853c542f0df493c8.png",
+    "static/media/kakashi.png": "/memory-card/static/media/kakashi.43bfb2c097da488a3f47.png",
+    "static/media/sasuke.png": "/memory-card/static/media/sasuke.9c5b5c46c71d562a6a81.png",
+    "static/media/kakazu.png": "/memory-card/static/media/kakazu.f5f1b06515b094feaf7d.png",
+    "static/media/ino.png": "/memory-card/static/media/ino.a355fbb0e67ac831c618.png",
+    "static/media/rock-lee.png": "/memory-card/static/media/rock-lee.e1281b3ae2d1e6bdc8df.png",
+    "index.html": "/memory-card/index.html",
+    "main.f8b39c02.css.map": "/memory-card/static/css/main.f8b39c02.css.map",
+    "main.0ef4e1ea.js.map": "/memory-card/static/js/main.0ef4e1ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8b39c02.css",
+    "static/js/main.0ef4e1ea.js"
+  ]
+}
